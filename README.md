@@ -28,7 +28,7 @@ Customize terminal prompt in Mac.
 	```
 	CONDA_CHANGEPS1=False conda activate base
 	```
-	
+
 4) In .bashrc is where you can write the code to custimize your terminal prompt.
 
 	a) Copy, paste and save the code below if you want to have your prompt show: hostname:currentUser currentWorkingDirectory $
@@ -45,7 +45,8 @@ Customize terminal prompt in Mac.
 		# 202 is the color for orange in the 256 color chart
 		# $(tput setaf 202) sets the color orange for: \h:\u \w $
 		# \h:\u \W - hostname:currentUser currentWorkingDirectory $ 
-		# $(tput sgr0) ends where the color orange is 
+		# $(tput sgr0) ends where the color orange is.
+		# \[ \] are escape characters to the terminal knows where the cursor is.
 
 		PS1="\[$(tput setaf 202)\]\h:\u \W $ \[$(tput sgr0)\]"; # My-MacbookPro:pat $
 		export PS1;
