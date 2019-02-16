@@ -11,16 +11,17 @@ Customize terminal prompt in Mac.
 	f) If you do have them open the files in a text editor.
 
 2) In .bash_profile copy, paste and save the code below:
-	
+	```
 	# Added to customize .bash_profile and .bashsrc
-	# if we open up a login shell it runs the code from .bash_profile
-	# its then going to run the code below which then runs the code from the .bashrc file
+	# If we open up a login shell it runs the code from .bash_profile
+	# It's then going to run the code below which then runs the code from the .bashrc file
 	# If the bashrc file exists then execute that code in the .bashrc file
 	# Can add all customizations to the .bashrc file
 
 	if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 	fi
+	```
 
 3) If you have conda installed change the letter f in (false) to a capital F (False) in the code below. That will remove the (base) that shows up in the beggining of the prompt
 
@@ -48,7 +49,7 @@ Customize terminal prompt in Mac.
 		export PS1;
 	
 	b) Copy, paste and save the code below if you want to have your prompt show: currentWorkingDirectory $
-	
+
 		# Makes terminal prompt show: (currentWorkingDirectory dollarsign) ~ $ in orange 
 
 		PS1="$(tput setaf 202)\W $ $(tput sgr0)"; # ~ $ (currentWorkingDirectory $)
