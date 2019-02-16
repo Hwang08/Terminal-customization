@@ -24,9 +24,11 @@ Customize terminal prompt in Mac.
 	```
 
 3) If you have conda installed change the letter f in (false) to a capital F (False) in the code below. That will remove the (base) that shows up in the beggining of the prompt
-
-	 CONDA_CHANGEPS1=False conda activate base
-
+	
+	```
+	CONDA_CHANGEPS1=False conda activate base
+	```
+	
 4) In .bashrc is where you can write the code to custimize your terminal prompt.
 
 	a) Copy, paste and save the code below if you want to have your prompt show: hostname:currentUser currentWorkingDirectory $
@@ -45,14 +47,14 @@ Customize terminal prompt in Mac.
 		# \h:\u \W - hostname:currentUser currentWorkingDirectory $ 
 		# $(tput sgr0) ends where the color orange is 
 
-		PS1="$(tput setaf 202)\h:\u \W $ $(tput sgr0)"; # My-MacbookPro:pat $
+		PS1="\[$(tput setaf 202)\h:\u \W $ $(tput sgr0)\]"; # My-MacbookPro:pat $
 		export PS1;
 	
 	b) Copy, paste and save the code below if you want to have your prompt show: currentWorkingDirectory $
 
 		# Makes terminal prompt show: (currentWorkingDirectory dollarsign) ~ $ in orange 
 
-		PS1="$(tput setaf 202)\W $ $(tput sgr0)"; # ~ $ (currentWorkingDirectory $)
+		PS1="\[$(tput setaf 202)\W $ $(tput sgr0)\]"; # ~ $ (currentWorkingDirectory $)
 		export PS1;
 
 
