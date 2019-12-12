@@ -1,4 +1,7 @@
 # Terminal-customization
+
+Credit following youtube video: By Corey Schafer https://www.youtube.com/watch?v=vDOVEDl2z84&list=PL9JA3-N-PO3AZAqx5Z9Hp6qZD-KaCj2jp&index=2&t=0s
+
 Customize terminal prompt in Mac.
 
 1) Show hidden ~/Library/ folder
